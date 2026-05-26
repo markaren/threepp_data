@@ -1,0 +1,3 @@
+# Pure asset repository: disable all end-of-line conversion so binary and text
+# assets check out byte-identical on every platform.
+* -text
