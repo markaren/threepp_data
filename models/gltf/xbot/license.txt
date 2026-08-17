@@ -1,0 +1,28 @@
+X Bot + locomotion clips
+========================
+
+Character:  "X Bot" (the Mixamo beta mannequin), 65-bone mixamorig skeleton.
+Animations: idle, walking, running, walking backward, jog backward,
+            left/right strafe (walk + run), left/right turn, left/right turn 90,
+            start walking, jump.
+
+Source:     Mixamo (https://www.mixamo.com), Adobe Inc.
+            Downloaded as FBX Binary (character "with skin", clips "without
+            skin") and merged into this single GLB by
+            threepp/scripts/mixamo_to_glb.py.
+
+Licence:    Adobe grants Mixamo characters and animations royalty-free for use
+            in personal, commercial and non-profit projects, including
+            incorporation into games and other products. Adobe's terms do NOT
+            permit redistributing the content as a stand-alone asset; it is
+            included here as part of the threepp sample data that the editor's
+            character-controller demo and tests consume.
+            See https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html
+
+Notes:      The mesh carries no textures - X Bot ships flat material colours,
+            which is what the FBX contains and what this GLB preserves.
+            The clips keep their authored root motion on mixamorig:Hips: that
+            is what lets a consumer measure each clip's own ground speed
+            instead of guessing it. A controller that owns the character's
+            position pins the hips' horizontal translation each frame (see
+            threepp's CharacterPlaySession).
